@@ -5,7 +5,7 @@ const AppDataSource = new DataSource({
     port: parseInt(process.env.MSSQL_PORT) || 1433,
     username: process.env.MSSQL_USER_NAME || 'sa',
     password: process.env.MSSQL_PASSWORD || 'reallyStrongPwd123',
-    database: process.env.MSSQL_DB || 'master',
+    database: process.env.MSSQL_DB || 'angular_rss',
     synchronize: process.env.MODE === 'development' ? true: false,
     extra: {
         trustServerCertificate: true,
